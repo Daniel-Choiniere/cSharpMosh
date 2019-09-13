@@ -1,0 +1,6 @@
+/Users/danchoiniere/Projects/moshBeginner/moshBeginner/bin/Debug/moshBeginner.exe
+/Users/danchoiniere/Projects/moshBeginner/moshBeginner/bin/Debug/moshBeginner.pdb
+/Users/danchoiniere/Projects/moshBeginner/moshBeginner/obj/Debug/moshBeginner.csprojAssemblyReference.cache
+/Users/danchoiniere/Projects/moshBeginner/moshBeginner/obj/Debug/moshBeginner.csproj.CoreCompileInputs.cache
+/Users/danchoiniere/Projects/moshBeginner/moshBeginner/obj/Debug/moshBeginner.exe
+/Users/danchoiniere/Projects/moshBeginner/moshBeginner/obj/Debug/moshBeginner.pdb
