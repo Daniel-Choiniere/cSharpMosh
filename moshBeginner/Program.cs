@@ -221,21 +221,41 @@
 //}
 
 
+//3- Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console. For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
 
-//function factorialize(num)
+//using System;
+
+//class MainClass
 //{
-//    if (num === 0)
+
+//    // Main Method 
+//    public static void Main()
 //    {
-//        return 1;
+
+//        Console.WriteLine("Enter a number to factorialize: ");
+
+//        // Converted string to int 
+//        int numberToFactor = Convert.ToInt32(Console.ReadLine());
+
+//        int factorial = Factorialize(numberToFactor);
+
+//        Console.WriteLine("Factorial of {0} is {1}", numberToFactor, factorial);
 //    }
-//    return num * factorialize(num - 1);
+//    public static int Factorialize(int number)
+//    {
+//        if (number == 0)
+//        {
+//            return 1;
+//        }
+//        return number * Factorialize(number - 1);
+//    }
 //}
 
-//factorialize(10);
 
 
+//4- Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number. If the user guesses the number, display “You won";
+//   otherwise, display “You lost". (To make sure the program is behaving correctly, you can display the secret number on the console first.)
 
-//3- Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console. For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
 using System;
 
 class MainClass
@@ -244,29 +264,29 @@ class MainClass
     // Main Method 
     public static void Main()
     {
-  
-        Console.WriteLine("Enter a number to factorialize: ");
+
+        Random random = new Random();
+        int randomNumber = random.Next(1, 10);
+        Console.WriteLine("Random number: " + randomNumber);
+
+        Console.WriteLine("Guess a number between 1-10. You will have four guesses: ");
+
 
         // Converted string to int 
-        int numberToFactor = Convert.ToInt32(Console.ReadLine());
+        int number = Convert.ToInt32(Console.ReadLine());
 
-        int factorial = Factorialize(numberToFactor);
 
-        Console.WriteLine("Factorial of {0} is {1}", numberToFactor, factorial);
-    }
-    public static int Factorialize(int number)
-    {
-        if (number == 0)
+        if (number == randomNumber) 
         {
-            return 1;
+            Console.WriteLine("You guessed the right number!!!");
         }
-        return number * Factorialize(number - 1);
+        else
+        {
+            Console.WriteLine("Guess Again");
+        }
     }
 }
 
-
-
-//4- Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number.If the user guesses the number, display “You won"; otherwise, display “You lost". (To make sure the program is behaving correctly, you can display the secret number on the console first.)
 
 
 
