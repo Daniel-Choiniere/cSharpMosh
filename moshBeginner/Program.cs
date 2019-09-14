@@ -166,28 +166,59 @@
 
 //PROBLEM SET 2
 //1- Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder.Display the count on the console.
-using System;
+//using System;
 
-class MainClass
-{
+//class MainClass
+//{
 
-    // Main Method 
-    public static void Main()
-    {
-        int count = 0;
-    for (int i = 1; i <= 100; i++)
-        {
-            if (i % 3 == 0)
-            {
-                count++;
-            }
-        }
-        Console.WriteLine(count);
-    }
-}
+//    // Main Method 
+//    public static void Main()
+//    {
+//        int count = 0;
+//    for (int i = 1; i <= 100; i++)
+//        {
+//            if (i % 3 == 0)
+//            {
+//                count++;
+//            }
+//        }
+//        Console.WriteLine(count);
+//    }
+//}
 
 
 //2- Write a program and continuously ask the user to enter a number or "ok" to exit. Calculate the sum of all the previously entered numbers and display it on the console.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+
+        int sum = 0;
+        string number = "0";
+
+        while (number != "ok")
+        { 
+            Console.WriteLine("Please enter a number, or type 'ok' to exit: ");
+
+            number = Console.ReadLine();
+
+            if (number == "ok")
+            {
+                break;
+            }
+            else
+            {
+                int numberInt = Convert.ToInt32(number);
+
+                sum += numberInt;
+            }
+        }
+        Console.WriteLine("The total is: " + sum);
+    }
+}
 
 
 
