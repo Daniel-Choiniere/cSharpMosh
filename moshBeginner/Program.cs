@@ -269,20 +269,26 @@ class MainClass
         int randomNumber = random.Next(1, 10);
         Console.WriteLine("Random number: " + randomNumber);
 
-        Console.WriteLine("Guess a number between 1-10. You will have four guesses: ");
-
-
-        // Converted string to int 
-        int number = Convert.ToInt32(Console.ReadLine());
-
-
-        if (number == randomNumber) 
+        int guess = 0;
+        while (guess < 4)
         {
-            Console.WriteLine("You guessed the right number!!!");
-        }
-        else
-        {
-            Console.WriteLine("Guess Again");
+            Console.WriteLine("Guess a number between 1-10. You will have four guesses: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            if (number == randomNumber)
+            {
+                Console.WriteLine("You guessed the right number!!!");
+                break;
+            }
+            else if (guess < 3)
+            {
+                Console.WriteLine("Guess Again");
+            }
+            else
+            {
+                Console.WriteLine("I'm sorry you are out of guesses, please play agian!");
+            }
+            guess++;
         }
     }
 }
