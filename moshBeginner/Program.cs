@@ -10,7 +10,7 @@
 //    {
 //        int number;
 
-//        Console.WriteLine("Enter your an number: ");
+//        Console.WriteLine("Enter a number bewtween 1 - 10: ");
 
 
 //        // Converted string to int 
@@ -189,40 +189,80 @@
 
 //2- Write a program and continuously ask the user to enter a number or "ok" to exit. Calculate the sum of all the previously entered numbers and display it on the console.
 
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+
+//        int sum = 0;
+//        string number = "0";
+
+//        while (number != "ok")
+//        { 
+//            Console.WriteLine("Please enter a number, or type 'ok' to exit: ");
+
+//            number = Console.ReadLine();
+
+//            if (number == "ok")
+//            {
+//                break;
+//            }
+//            else
+//            {
+//                int numberInt = Convert.ToInt32(number);
+
+//                sum += numberInt;
+//            }
+//        }
+//        Console.WriteLine("The total is: " + sum);  
+//    }
+//}
+
+
+
+//function factorialize(num)
+//{
+//    if (num === 0)
+//    {
+//        return 1;
+//    }
+//    return num * factorialize(num - 1);
+//}
+
+//factorialize(10);
+
+
+
+//3- Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console. For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
 using System;
 
-class Program
+class MainClass
 {
-    static void Main()
+
+    // Main Method 
+    public static void Main()
     {
+  
+        Console.WriteLine("Enter a number to factorialize: ");
 
-        int sum = 0;
-        string number = "0";
+        // Converted string to int 
+        int numberToFactor = Convert.ToInt32(Console.ReadLine());
 
-        while (number != "ok")
-        { 
-            Console.WriteLine("Please enter a number, or type 'ok' to exit: ");
+        int factorial = Factorialize(numberToFactor);
 
-            number = Console.ReadLine();
-
-            if (number == "ok")
-            {
-                break;
-            }
-            else
-            {
-                int numberInt = Convert.ToInt32(number);
-
-                sum += numberInt;
-            }
+        Console.WriteLine("Factorial of {0} is {1}", numberToFactor, factorial);
+    }
+    public static int Factorialize(int number)
+    {
+        if (number == 0)
+        {
+            return 1;
         }
-        Console.WriteLine("The total is: " + sum);
+        return number * Factorialize(number - 1);
     }
 }
-
-
-
-//3- Write a program and ask the user to enter a number.Compute the factorial of the number and print it on the console. For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
 
 
 
