@@ -407,28 +407,86 @@
 
 //2- Write a program and ask the user to enter their name.Use an array to reverse the name and then store the result in a new string. Display the reversed name on the console.
 
-using System;
-using System.Linq;
+//using System;
 
-class MainClass
-{
+//class MainClass
+//{
 
-    // Main Method 
-    public static void Main()
-    {
-        Console.WriteLine("Please enter your name");
+//    // Main Method 
+//    public static void Main()
+//    {
+//        Console.WriteLine("Please enter your name");
 
-        string name = Console.ReadLine();
+//        string name = Console.ReadLine();
 
-        char[] charArray = name.ToCharArray();
-        Array.Reverse(charArray);
-        Console.WriteLine(charArray);
-    }
-}
+//        char[] charArray = name.ToCharArray();
+//        Array.Reverse(charArray);
+//        Console.WriteLine(charArray);
+//    }
+//}
 
 
 //3- Write a program and ask the user to enter 5 numbers.If a number has been previously entered, display an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
+using System;
+using System.Collections.Generic;
 
+class MainClass
+{
+    static void Main()
+    {
+        var numbersTaken = 0;
+        List<string> numberInput = new List<string>();
+        while (numbersTaken <= 4)
+        {
+            Console.WriteLine("Please enter a number: ");
+            string input = Console.ReadLine();
+
+            if (numberInput.Contains(input))
+            {
+                Console.WriteLine("You have already entered that number, please enter a unique number: ");
+                string inputUnique = Console.ReadLine();
+                numberInput.Add(inputUnique);
+
+                Console.WriteLine(inputUnique + " added to the number list");
+
+                numbersTaken++;
+            }
+            else
+            {
+                numberInput.Add(input);
+
+                Console.WriteLine(input + " added to the number list");
+
+                numbersTaken++;
+            }
+
+
+        }
+        numberInput.Sort();
+
+        for (var i = 0; i < numberInput.Count; i++)
+        {
+            Console.Write(numberInput[i]);
+        }
+        
+
+
+        //if (namesInput.Count == 2)
+        //{
+        //    Console.WriteLine(namesInput[0] + " liked your post");
+
+        //}
+        //else if (namesInput.Count == 3)
+        //{
+        //    Console.WriteLine("{0}, and {1} like your post", namesInput[0], namesInput[1]);
+        //}
+        //else if (namesInput.Count > 3)
+        //{
+        //    Console.WriteLine("{0},{1} and " + (namesInput.Count - 3) + "others like your post", namesInput[0], namesInput[1]);
+        //}
+
+    }
+}
 
 
 //4- Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may include duplicates.Display the unique numbers that the user has entered.
