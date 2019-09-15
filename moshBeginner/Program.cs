@@ -47,7 +47,6 @@
 
 //        // Converted string to array
 //        number = Console.ReadLine();
-//        //char[] numberArray = number.ToCharArray();
 
 //        int[] array = number.Split(',').Select(str => int.Parse(str)).ToArray();
 
@@ -92,7 +91,6 @@
 
 //        // Converted string to array
 //        number = Console.ReadLine();
-//        //char[] numberArray = number.ToCharArray();
 
 //        int[] array = number.Split(',').Select(str => int.Parse(str)).ToArray();
 
@@ -357,58 +355,76 @@
 //If more than two people like your post, it displays: [Friend 1], [Friend 2] and[Number of Other People] others like your post.
 //Write a program and continuously ask the user to enter different names, until the user presses Enter (without supplying a name). Depending on the number of names provided, display a message based on the above pattern.
 
-using System;
-using System.Collections.Generic;
+//using System;
+//using System.Collections.Generic;
 
-class MainClass
-{
-    static void Main()
-    {
-        // create the string list instance
-        List<string> namesInput = new List<string>();
+//class MainClass
+//{
+//    static void Main()
+//    {
+//        // create the string list instance
+//        List<string> namesInput = new List<string>();
 
-        // get user input
-        Console.WriteLine("Please enter a first name. When done press enter.");
-        string input = Console.ReadLine();
+//        // get user input
+//        Console.WriteLine("Please enter a first name. When done press enter.");
+//        string input = Console.ReadLine();
 
-        // add user input to the namesInput list
-        namesInput.Add(input);
+//        // add user input to the namesInput list
+//        namesInput.Add(input);
 
-        Console.WriteLine(input + " added to the names list");
+//        Console.WriteLine(input + " added to the names list");
 
-        while (input != "")
-        {
-            Console.WriteLine("Please enter another first name");
-            input = Console.ReadLine();
-            namesInput.Add(input);
+//        while (input != "")
+//        {
+//            Console.WriteLine("Please enter another first name");
+//            input = Console.ReadLine();
+//            namesInput.Add(input);
 
-            if (input != "")
-            {
-                Console.WriteLine(input + " added to the names list");
-            }
-            
-        }
+//            if (input != "")
+//            {
+//                Console.WriteLine(input + " added to the names list");
+//            }
+
+//        }
 
 
-        if (namesInput.Count == 2)
-        {
-            Console.WriteLine(namesInput[0] + " liked your post");
+//        if (namesInput.Count == 2)
+//        {
+//            Console.WriteLine(namesInput[0] + " liked your post");
 
-        } else if (namesInput.Count == 3)
-        {
-            Console.WriteLine("{0}, and {1} like your post", namesInput[0], namesInput[1]);
-        } else if (namesInput.Count > 3)
-        {
-            Console.WriteLine("{0},{1} and " + (namesInput.Count - 3) + "others like your post", namesInput[0], namesInput[1]);
-        }
+//        } else if (namesInput.Count == 3)
+//        {
+//            Console.WriteLine("{0}, and {1} like your post", namesInput[0], namesInput[1]);
+//        } else if (namesInput.Count > 3)
+//        {
+//            Console.WriteLine("{0},{1} and " + (namesInput.Count - 3) + "others like your post", namesInput[0], namesInput[1]);
+//        }
 
-    }
-}
+//    }
+//}
 
 
 
 //2- Write a program and ask the user to enter their name.Use an array to reverse the name and then store the result in a new string. Display the reversed name on the console.
 
+using System;
+using System.Linq;
+
+class MainClass
+{
+
+    // Main Method 
+    public static void Main()
+    {
+        Console.WriteLine("Please enter your name");
+
+        string name = Console.ReadLine();
+
+        char[] charArray = name.ToCharArray();
+        Array.Reverse(charArray);
+        Console.WriteLine(charArray);
+    }
+}
 
 
 //3- Write a program and ask the user to enter 5 numbers.If a number has been previously entered, display an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
