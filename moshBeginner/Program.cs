@@ -475,41 +475,68 @@
 
 //4- Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may include duplicates.Display the unique numbers that the user has entered.
 
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+
+//class Program
+//{
+//    static void Main()
+//    {
+
+//		string number = "Go";
+
+//        List<string> numberInput = new List<string>();
+
+//        do
+//        {
+//            Console.WriteLine("Please enter a number, or type 'Quit' to exit: ");
+//            number = Console.ReadLine();
+//            numberInput.Add(number);
+
+//        }
+//        while (number != "Quit");
+
+//    var uniqueNumbers =
+//        from n in numberInput
+//        group n by n into nGroup
+//        where nGroup.Count() == 1
+//        select nGroup.Key;
+
+//        foreach (string uniqueNumber in uniqueNumbers)
+//        {
+//            Console.WriteLine(uniqueNumber);
+//        }
+//    }
+//}
+
+
+//5- Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2, 10). If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try; otherwise, display the 3 smallest numbers in the list.
+
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 
-class Program
+
+class MainClass
 {
-    static void Main()
+
+    // Main Method 
+    public static void Main()
     {
-
-		string number = "Go";
-
         List<string> numberInput = new List<string>();
 
-        do
+        Console.WriteLine("Please give me a series of numbers, comma seperated ");
+
+        var number = Console.ReadLine();
+
+        numberInput.Add(number);
+
+        bool isEmpty = !numberInput.Any();
+
+        if (numberInput.Count < 5 || isEmpty)
         {
-            Console.WriteLine("Please enter a number, or type 'Quit' to exit: ");
-            number = Console.ReadLine();
-            numberInput.Add(number);
-
-        }
-        while (number != "Quit");
-
-    var uniqueNumbers =
-        from n in numberInput
-        group n by n into nGroup
-        where nGroup.Count() == 1
-        select nGroup.Key;
-
-        foreach (string uniqueNumber in uniqueNumbers)
-        {
-            Console.WriteLine(uniqueNumber);
+            Console.WriteLine("Invalid List");
         }
     }
 }
-
-// { 0, 1, 3, 5 }
-
-//5- Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2, 10). If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try; otherwise, display the 3 smallest numbers in the list.
