@@ -10,3 +10,9 @@
 /Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshBeginner/bin/Debug/moshBeginner.pdb
 /Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshBeginner/obj/Debug/moshBeginner.csprojAssemblyReference.cache
 /Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshBeginner/obj/Debug/moshBeginner.csproj.CoreCompileInputs.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshBeginner/bin/Debug/moshBeginner.exe
+/Users/danchoiniere/careerDevs/cSharpMosh/moshBeginner/bin/Debug/moshBeginner.pdb
+/Users/danchoiniere/careerDevs/cSharpMosh/moshBeginner/obj/Debug/moshBeginner.csprojAssemblyReference.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshBeginner/obj/Debug/moshBeginner.csproj.CoreCompileInputs.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshBeginner/obj/Debug/moshBeginner.exe
+/Users/danchoiniere/careerDevs/cSharpMosh/moshBeginner/obj/Debug/moshBeginner.pdb
