@@ -163,6 +163,8 @@
 
 
 //PROBLEM SET 2
+
+
 //1- Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder.Display the count on the console.
 //using System;
 
@@ -513,30 +515,86 @@
 
 //5- Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2, 10). If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try; otherwise, display the 3 smallest numbers in the list.
 
+//using System;
+//using System.Linq;
+//using System.Collections.Generic;
+
+
+//class MainClass
+//{
+//    // Main Method 
+//    public static void Main()
+//    {
+//        List<string> numberInput = new List<string>();
+
+//        Console.WriteLine("Please give me a series of numbers, comma seperated ");
+
+//        var number = Console.ReadLine();
+
+//        numberInput.Add(number);
+
+//        bool isEmpty = !numberInput.Any();
+
+//        if (numberInput.Count < 5 || isEmpty)
+//        {
+//            Console.WriteLine("Invalid List");
+//        }
+//    }
+//}
+
+
+
+//PROBLEM SET 3
+
+//1- Write a program and ask the user to enter a few numbers separated by a hyphen.Work out if the numbers are consecutive.
+//For example, if the input is "5-6-7-8-9" or "20-19-18-17-16", display a message: "Consecutive"; otherwise, display "Not Consecutive".
+
 using System;
 using System.Linq;
 using System.Collections.Generic;
-
-
 class MainClass
 {
-
     // Main Method 
     public static void Main()
     {
-        List<string> numberInput = new List<string>();
+     
 
-        Console.WriteLine("Please give me a series of numbers, comma seperated ");
+        Console.WriteLine("Please give me a series of numbers, hyphen seperated ");
 
         var number = Console.ReadLine();
 
-        numberInput.Add(number);
+        bool isEmpty = !number.Any();
 
-        bool isEmpty = !numberInput.Any();
-
-        if (numberInput.Count < 5 || isEmpty)
+        if (isEmpty)
         {
-            Console.WriteLine("Invalid List");
+            Console.WriteLine("Please enter your numbers!!!");
         }
+        //else
+        //{
+        //    string[] numbers = numberInput.Split('-');
+        //    for (var i = 0; i < numberInput.Count; i++)
+        //    {
+        //        if (numberInput[i] > numberInput[i + 1])
+        //    }
+        //}
     }
 }
+
+
+//2- Write a program and ask the user to enter a few numbers separated by a hyphen.If the user simply presses Enter, without supplying an input,
+//exit immediately; otherwise, check to see if there are duplicates.If so, display "Duplicate" on the console.
+
+
+
+//3- Write a program and ask the user to enter a time value in the 24-hour time format(e.g. 19:00). A valid time should be between 00:00 and 23:59.
+//If the time is valid, display "Ok"; otherwise, display "Invalid Time". If the user doesn't provide any values, consider it as invalid time.
+
+
+
+//4- Write a program and ask the user to enter a few words separated by a space.Use the words to create a variable name with PascalCase.For example,
+//if the user types: "number of students", display "NumberOfStudents". Make sure that the program is not dependent on the input.So, if the user types "NUMBER OF STUDENTS", the program should still display "NumberOfStudents".
+
+
+
+//5- Write a program and ask the user to enter an English word. Count the number of vowels (a, e, o, u, i) in the word. So, if the user enters "inadequate",
+//the program should display 6 on the console.
