@@ -545,13 +545,66 @@
 
 
 //PROBLEM SET 4
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 
 //1- Write a program and ask the user to enter a few numbers separated by a hyphen.Work out if the numbers are consecutive.
 //For example, if the input is "5-6-7-8-9" or "20-19-18-17-16", display a message: "Consecutive"; otherwise, display "Not Consecutive".
 //public void Exercise1()
+
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+
+//class MainClass
+//{
+//    // Main Method 
+//    public static void Main()
+//    {
+//        {
+//            Console.Write("Enter a few numbers, hyphen seperated: ");
+//            var input = Console.ReadLine();
+
+//            var numbers = new List<int>();
+
+//            foreach (var number in input.Split('-'))
+//                numbers.Add(Convert.ToInt32(number));
+
+//            numbers.Sort();
+
+//            var notSequential = 0;
+
+//            for (var i = 1; i < numbers.Count; i++)
+//            {
+
+//                if (numbers[i] != numbers[i - 1] + 1)
+//                {
+//                    notSequential++;
+//                }
+//                //Console.WriteLine("Consecutive");
+//            }
+//            if (notSequential > 0 )
+//            {
+//                Console.WriteLine("Not Consecutive");
+
+//            }
+//            else
+//            {
+//                Console.WriteLine("Consecutive");
+
+//            }
+
+//        }
+      
+
+//    }
+//}
+
+
+//2- Write a program and ask the user to enter a few numbers separated by a hyphen. If the user simply presses Enter, without supplying an input,
+//exit immediately; otherwise, check to see if there are duplicates.If so, display "Duplicate" on the console.
+
+using System;
+using System.Collections.Generic;
 
 class MainClass
 {
@@ -559,98 +612,49 @@ class MainClass
     public static void Main()
     {
         {
-            Console.Write("Enter a few numbers (eg 1-2-3-4): ");
+            Console.Write("Enter a few numbers, hyphen seperated: ");
             var input = Console.ReadLine();
 
-            var numbers = new List<int>();
-
-            foreach (var number in input.Split('-'))
-                numbers.Add(Convert.ToInt32(number));
-
-            numbers.Sort();
-
-            var notSequential = 0;
-
-            for (var i = 1; i < numbers.Count; i++)
+            if (string.IsNullOrEmpty(input))
             {
-
-                if (numbers[i] != numbers[i - 1] + 1)
-                {
-                    notSequential++;
-                }
-                //Console.WriteLine("Consecutive");
-            }
-            if (notSequential > 0 )
-            {
-                Console.WriteLine("Not Consecutive");
-
+                Environment.Exit(0);
             }
             else
             {
-                Console.WriteLine("Consecutive");
+                var numbers = new List<int>();
 
+                foreach (var number in input.Split('-'))
+                    numbers.Add(Convert.ToInt32(number));
+
+                numbers.Sort();
+
+                var duplicates = 0;
+
+                for (var i = 1; i < numbers.Count; i++)
+                {
+                    //Console.WriteLine(numbers[i]);
+                    //Console.WriteLine(numbers[i - 1] + 1);
+
+                    if (numbers[i] != numbers[i - 1] + 1)
+                    {
+                        duplicates++;
+                    }
+                }
+                //Console.WriteLine(duplicates);
+                if (duplicates > 0)
+                {
+                    Console.WriteLine("Duplicates");
+
+                }
+                else
+                {
+                    Console.WriteLine("No Duplicates");
+
+                }
             }
-
         }
-      
-
     }
 }
-
-
-
-//class MainClass
-//{
-//    // Main Method 
-//    public static void Main()
-//    {
-//        Console.WriteLine("Please give me a series of numbers, hyphen seperated ");
-//        var input = Console.ReadLine();
-
-//        bool isEmpty = !input.Any();
-
-//        if (isEmpty)
-//        {
-//            Console.WriteLine("Please enter your numbers!!!");
-//        }
-//        else
-//        {
-//            var numbers = new List<int>();
-//            var sequential = 0;
-//            var notSequential = 0;
-
-//            string[] numberSplit = numbers.Split('-');
-//            for (var i = 0; i < numbers.Length - 1; i++)
-//            {
-//                Console.WriteLine(numbers[i]);
-
-//                if (Convert.ToInt32(numbers[i]) < Convert.ToInt32(numbers[i + 1]))
-//                {
-//                    sequential++;
-//                }
-//                else if (Convert.ToInt32(numbers[i]) > Convert.ToInt32(numbers[i + 1]))
-//                {
-//                    notSequential++;
-//                }
-//            }
-//            if (sequential != 0 || notSequential != 0)
-//            {
-//                Console.WriteLine("Not Consecutive");
-//            }
-//            else
-//            {
-//                Console.WriteLine("Consecutive");
-//            }
-//            bool isInSequence = numbers.SequenceEqual(Enumerable.Range(1, numbers.Count()));
-//        }
-//    }
-//}
-
-
-
-//2- Write a program and ask the user to enter a few numbers separated by a hyphen.If the user simply presses Enter, without supplying an input,
-//exit immediately; otherwise, check to see if there are duplicates.If so, display "Duplicate" on the console.
-
 
 
 //3- Write a program and ask the user to enter a time value in the 24-hour time format(e.g. 19:00). A valid time should be between 00:00 and 23:59.
