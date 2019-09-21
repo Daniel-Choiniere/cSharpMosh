@@ -701,8 +701,6 @@
 //if the user types: "number of students", display "NumberOfStudents". Make sure that the program is not dependent on the input.So, if the user types "NUMBER OF STUDENTS", the program should still display "NumberOfStudents".
 
 using System;
-using System.Linq;
-using System.Collections.Generic;
 
 class MainClass
 {
@@ -715,12 +713,16 @@ class MainClass
 
         var input = Console.ReadLine();
 
+        input = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(input.ToLower());
+
+        //Console.WriteLine(input);
         String[] words = input.Split(' ');
 
         var pascaledWords = "";
 
         foreach (String word in words)
         {
+
             pascaledWords += word;
         }
         Console.WriteLine(pascaledWords);
