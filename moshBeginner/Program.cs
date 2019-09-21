@@ -741,7 +741,7 @@ class MainClass
     {
         Console.WriteLine("Please enter an English word: ");
 
-        var input = Console.ReadLine();
+        var input = Console.ReadLine().ToLower();
 
         var totalVowels = 0;
         for (var i=0; i<input.Length; i++)
