@@ -700,6 +700,38 @@
 //4- Write a program and ask the user to enter a few words separated by a space.Use the words to create a variable name with PascalCase.For example,
 //if the user types: "number of students", display "NumberOfStudents". Make sure that the program is not dependent on the input.So, if the user types "NUMBER OF STUDENTS", the program should still display "NumberOfStudents".
 
+//using System;
+
+//class MainClass
+//{
+//    // Main Method 
+//    public static void Main()
+//    {
+//        //List<string> numberInput = new List<string>();
+
+//        Console.WriteLine("Please give me a few words, each sepersted by a space: ");
+
+//        var input = Console.ReadLine();
+
+//        input = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(input.ToLower());
+
+//        //Console.WriteLine(input);
+//        String[] words = input.Split(' ');
+
+//        var pascaledWords = "";
+
+//        foreach (String word in words)
+//        {
+//            pascaledWords += word;
+//        }
+//        Console.WriteLine(pascaledWords);
+//    }
+//}
+
+
+//5- Write a program and ask the user to enter an English word. Count the number of vowels (a, e, o, u, i) in the word. So, if the user enters "inadequate",
+//the program should display 6 on the console.
+
 using System;
 
 class MainClass
@@ -707,29 +739,18 @@ class MainClass
     // Main Method 
     public static void Main()
     {
-        //List<string> numberInput = new List<string>();
-
-        Console.WriteLine("Please give me a few words, each sepersted by a space: ");
+        Console.WriteLine("Please enter an English word: ");
 
         var input = Console.ReadLine();
 
-        input = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(input.ToLower());
-
-        //Console.WriteLine(input);
-        String[] words = input.Split(' ');
-
-        var pascaledWords = "";
-
-        foreach (String word in words)
+        var totalVowels = 0;
+        for (var i=0; i<input.Length; i++)
         {
-
-            pascaledWords += word;
+            if (input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u')
+            {
+                totalVowels++;
+            }
         }
-        Console.WriteLine(pascaledWords);
-
+        Console.WriteLine("Number of vowels in word: " +  totalVowels);  
     }
 }
-
-
-//5- Write a program and ask the user to enter an English word. Count the number of vowels (a, e, o, u, i) in the word. So, if the user enters "inadequate",
-//the program should display 6 on the console.
