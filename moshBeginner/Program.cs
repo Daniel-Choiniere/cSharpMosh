@@ -660,42 +660,73 @@
 //3- Write a program and ask the user to enter a time value in the 24-hour time format(e.g. 19:00). A valid time should be between 00:00 and 23:59.
 //If the time is valid, display "Ok"; otherwise, display "Invalid Time". If the user doesn't provide any values, consider it as invalid time.
 
-using System;
+//using System;
 
-class MainClass
-{
+//class MainClass
+//{
 
-    // Main Method 
-    public static void Main()
-    {
+//    // Main Method 
+//    public static void Main()
+//    {
 
-        Console.WriteLine("Please enter a time value in the 24-hour time format(e.g. 19:00): ");
+//        Console.WriteLine("Please enter a time value in the 24-hour time format(e.g. 19:00): ");
 
-        // Converted string to int 
-        var input = Console.ReadLine();
-        var time = TimeSpan.Parse("07:35");
+//        // Converted string to int 
+//        var input = Console.ReadLine();
 
-        TimeSpan start = new TimeSpan(0, 0, 0); 
-        TimeSpan end = new TimeSpan(23, 5, 9);  
-        TimeSpan now = new TimeSpan(22, 0 , 0);
+//        if (string.IsNullOrEmpty(input))
+//        {
+//            Console.WriteLine("Invalid Time");
+//            Environment.Exit(0);
 
-        if ((now > start) && (now < end))
-        {
-            Console.WriteLine("OK");
+//        }
 
-        }
-        else
-        {
-            Console.WriteLine("Invalid Time");
+//        var hours = int.Parse(input.Split(':')[0]);
 
-        }
-    }
-}
+//        if (hours > 23)
+//        {
+//            Console.WriteLine("Invalid Time");
+
+//        }
+//        else
+//        {
+//            Console.WriteLine("OK");
+
+//        }
+//    }
+//}
 
 
 //4- Write a program and ask the user to enter a few words separated by a space.Use the words to create a variable name with PascalCase.For example,
 //if the user types: "number of students", display "NumberOfStudents". Make sure that the program is not dependent on the input.So, if the user types "NUMBER OF STUDENTS", the program should still display "NumberOfStudents".
 
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class MainClass
+{
+    // Main Method 
+    public static void Main()
+    {
+        //List<string> numberInput = new List<string>();
+
+        Console.WriteLine("Please give me a few words, each sepersted by a space: ");
+
+        var input = Console.ReadLine();
+
+        String[] words = input.Split(' ');
+
+        var pascaledWords = "";
+
+        foreach (String word in words)
+        {
+            pascaledWords += word;
+        }
+        Console.WriteLine(pascaledWords);
+
+    }
+}
 
 
 //5- Write a program and ask the user to enter an English word. Count the number of vowels (a, e, o, u, i) in the word. So, if the user enters "inadequate",
