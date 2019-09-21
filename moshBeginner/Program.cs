@@ -594,7 +594,7 @@
 //            }
 
 //        }
-      
+
 
 //    }
 //}
@@ -603,63 +603,94 @@
 //2- Write a program and ask the user to enter a few numbers separated by a hyphen. If the user simply presses Enter, without supplying an input,
 //exit immediately; otherwise, check to see if there are duplicates.If so, display "Duplicate" on the console.
 
-using System;
-using System.Collections.Generic;
+//using System;
+//using System.Collections.Generic;
 
-class MainClass
-{
-    // Main Method 
-    public static void Main()
-    {
-        {
-            Console.Write("Enter a few numbers, hyphen seperated: ");
-            var input = Console.ReadLine();
+//class MainClass
+//{
+//    // Main Method 
+//    public static void Main()
+//    {
+//        {
+//            Console.Write("Enter a few numbers, hyphen seperated: ");
+//            var input = Console.ReadLine();
 
-            if (string.IsNullOrEmpty(input))
-            {
-                Environment.Exit(0);
-            }
-            else
-            {
-                var numbers = new List<int>();
+//            if (string.IsNullOrEmpty(input))
+//            {
+//                Environment.Exit(0);
+//            }
+//            else
+//            {
+//                var numbers = new List<int>();
 
-                foreach (var number in input.Split('-'))
-                    numbers.Add(Convert.ToInt32(number));
+//                foreach (var number in input.Split('-'))
+//                    numbers.Add(Convert.ToInt32(number));
 
-                numbers.Sort();
+//                numbers.Sort();
 
-                var duplicates = 0;
+//                var duplicates = 0;
 
-                for (var i = 1; i < numbers.Count; i++)
-                {
-                    //Console.WriteLine(numbers[i]);
-                    //Console.WriteLine(numbers[i - 1] + 1);
+//                for (var i = 1; i < numbers.Count; i++)
+//                {
+//                    //Console.WriteLine(numbers[i]);
+//                    //Console.WriteLine(numbers[i - 1] + 1);
 
-                    if (numbers[i] != numbers[i - 1] + 1)
-                    {
-                        duplicates++;
-                    }
-                }
-                //Console.WriteLine(duplicates);
-                if (duplicates > 0)
-                {
-                    Console.WriteLine("Duplicates");
+//                    if (numbers[i] != numbers[i - 1] + 1)
+//                    {
+//                        duplicates++;
+//                    }
+//                }
+//                //Console.WriteLine(duplicates);
+//                if (duplicates > 0)
+//                {
+//                    Console.WriteLine("Duplicates");
 
-                }
-                else
-                {
-                    Console.WriteLine("No Duplicates");
+//                }
+//                else
+//                {
+//                    Console.WriteLine("No Duplicates");
 
-                }
-            }
-        }
-    }
-}
+//                }
+//            }
+//        }
+//    }
+//}
 
 
 //3- Write a program and ask the user to enter a time value in the 24-hour time format(e.g. 19:00). A valid time should be between 00:00 and 23:59.
 //If the time is valid, display "Ok"; otherwise, display "Invalid Time". If the user doesn't provide any values, consider it as invalid time.
 
+using System;
+
+class MainClass
+{
+
+    // Main Method 
+    public static void Main()
+    {
+
+        Console.WriteLine("Please enter a time value in the 24-hour time format(e.g. 19:00): ");
+
+        // Converted string to int 
+        var input = Console.ReadLine();
+        var time = TimeSpan.Parse("07:35");
+
+        TimeSpan start = new TimeSpan(0, 0, 0); 
+        TimeSpan end = new TimeSpan(23, 5, 9);  
+        TimeSpan now = new TimeSpan(22, 0 , 0);
+
+        if ((now > start) && (now < end))
+        {
+            Console.WriteLine("OK");
+
+        }
+        else
+        {
+            Console.WriteLine("Invalid Time");
+
+        }
+    }
+}
 
 
 //4- Write a program and ask the user to enter a few words separated by a space.Use the words to create a variable name with PascalCase.For example,
