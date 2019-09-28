@@ -6,7 +6,7 @@ namespace Stopwatch
     {
         public string Title;
         public string Description;
-        public int TotalVotes;
+        private int TotalVotes;
         public DateTime Created;
 
 
@@ -38,7 +38,7 @@ namespace Stopwatch
             post.Description = "First program";
             post.Created = new DateTime(2019, 6, 22, 18, 47, 0);
 
-            Console.WriteLine(post.Created);
+            //Console.WriteLine(post.Created);
             post.UpVote();
             post.UpVote();
             post.DownVote();
