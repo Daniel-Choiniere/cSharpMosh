@@ -1,0 +1,5 @@
+/Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshIntermediate/StackOverflowPost/StackOverflowPost/bin/Debug/StackOverflowPost.exe
+/Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshIntermediate/StackOverflowPost/StackOverflowPost/bin/Debug/StackOverflowPost.pdb
+/Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshIntermediate/StackOverflowPost/StackOverflowPost/obj/Debug/StackOverflowPost.csprojAssemblyReference.cache
+/Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshIntermediate/StackOverflowPost/StackOverflowPost/obj/Debug/StackOverflowPost.exe
+/Users/danchoiniere/careerDevs/careerDevsInner/mosh/cSharpMosh/moshIntermediate/StackOverflowPost/StackOverflowPost/obj/Debug/StackOverflowPost.pdb

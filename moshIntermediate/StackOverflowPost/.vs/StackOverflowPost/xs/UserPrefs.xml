@@ -1,14 +1,14 @@
-﻿<Properties StartupConfiguration="{89BF1DF6-923B-4F77-A37D-070864A1D24D}|Default">
-  <MonoDevelop.Ide.ItemProperties.Stopwatch PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stopwatch/Program.cs">
+﻿<Properties StartupConfiguration="{008C477E-14DD-45A7-9F75-444A50879CA4}|Default">
+  <MonoDevelop.Ide.ItemProperties.StackOverflowPost FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="StackOverflowPost/Program.cs">
     <Files>
-      <File FileName="Stopwatch/Program.cs" Line="43" Column="1" />
+      <File FileName="StackOverflowPost/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Stopwatch" expanded="True">
-            <Node name="Stopwatch" expanded="True">
+          <Node name="StackOverflowPost" expanded="True">
+            <Node name="StackOverflowPost" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -16,7 +16,7 @@
       </Pad>
       <Pad Id="ClassPad">
         <State name="__root__">
-          <Node name="Stopwatch" expanded="True" selected="True" />
+          <Node name="StackOverflowPost" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
