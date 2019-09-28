@@ -4,35 +4,39 @@ namespace Stopwatch
 {
     public class Stopwatch
     {
-        public int Start;
+        private int Start;
         public int Stop;
-
-        public void SetStart(int start)
-        {
-            Start = start;
-        }
 
         public void SetStop(int stop)
         {
             Stop = stop;
         }
 
-        public int Duration()
+        public void Duration()
         {
             int duration = Stop - Start;
-            return duration;
+
+            Start = Stop;
+            Console.WriteLine(duration);
         }
     }
+
+
     class MainClass
     {
         public static void Main(string[] args)
         {
             var stopwatch = new Stopwatch();
 
-            stopwatch.SetStart(3);
             stopwatch.SetStop(5);
+            stopwatch.Duration();
 
-            Console.WriteLine(stopwatch.Duration());
+
+            stopwatch.SetStop(15);
+            stopwatch.Duration();
+
+            stopwatch.SetStop(30);
+            stopwatch.Duration();
         }
     }
 }
