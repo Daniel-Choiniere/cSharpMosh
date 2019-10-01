@@ -8,24 +8,20 @@ namespace LIFOstack
     {
         List<int> myList = new List<int>();
 
-        public List<int> Push(object obj)
+        public void Push(object obj)
         {
             int i = (int)obj;
 
             myList.Add(i);
-
-            return myList;
-            //foreach (int item in myarray)
-            //{
-            //    Console.WriteLine(item);
-            //}
         }
 
-        //public object obj Pop()
-        //{
-        //    myarray.Remove(myarray.Count);
-        //    return;
-        //}
+        public int Pop()
+        {
+            var removed = myList[myList.Count - 1];
+            myList.RemoveAt(myList.Count - 1);
+
+            return removed;
+        }
 
         //public void clear()
         //{
@@ -38,14 +34,18 @@ namespace LIFOstack
         public static void Main(string[] args)
         {
             var stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
             stack.Push(3);
-            stack.Push(7);
-            var myList = stack.Push(9);
 
-            foreach (int item in myList)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
+            //foreach (int item in myList)
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
     }
 }
