@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIFOstack", "LIFOstack\LIFOstack.csproj", "{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}.Debug|anycpu.Build.0 = Debug|anycpu
+		{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}.Release|anycpu.ActiveCfg = Release|anycpu
+		{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
