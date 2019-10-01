@@ -1,0 +1,6 @@
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/LIFOstack/LIFOstack/bin/Debug/LIFOstack.exe
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/LIFOstack/LIFOstack/bin/Debug/LIFOstack.pdb
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/LIFOstack/LIFOstack/obj/Debug/LIFOstack.csprojAssemblyReference.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/LIFOstack/LIFOstack/obj/Debug/LIFOstack.csproj.CoreCompileInputs.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/LIFOstack/LIFOstack/obj/Debug/LIFOstack.exe
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/LIFOstack/LIFOstack/obj/Debug/LIFOstack.pdb

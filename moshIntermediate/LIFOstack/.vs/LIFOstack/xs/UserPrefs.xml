@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}|Default">
-  <MonoDevelop.Ide.ItemProperties.LIFOstack FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.LIFOstack PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="LIFOstack/Program.cs">
     <Files>
-      <File FileName="LIFOstack/Program.cs" Line="12" Column="2" />
+      <File FileName="LIFOstack/Program.cs" Line="15" Column="10" />
+      <File FileName="../Stopwatch/Stopwatch/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
