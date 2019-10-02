@@ -6,7 +6,7 @@ namespace LIFOstack
 {
     public class Stack
     {
-        List<int> myList = new List<int>();
+        List<object> myList = new List<object>();
 
         public void Push(object obj)
         {
@@ -15,7 +15,7 @@ namespace LIFOstack
             myList.Add(i);
         }
 
-        public int Pop()
+        public object Pop()
         {
             var removed = myList[myList.Count - 1];
             myList.RemoveAt(myList.Count - 1);
@@ -23,10 +23,15 @@ namespace LIFOstack
             return removed;
         }
 
-        //public void clear()
-        //{
+        public void clear()
+        {
+            myList.Clear();
 
-        //}
+            foreach (int item in myList)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 
     class MainClass
@@ -40,12 +45,7 @@ namespace LIFOstack
 
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
-
-            //foreach (int item in myList)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            Console.WriteLine(stack.Pop());   
         }
     }
 }

@@ -1,14 +1,14 @@
-﻿<Properties StartupConfiguration="{0D269986-76C2-4B4C-9EF0-FD1FFC2C52BD}|Default">
-  <MonoDevelop.Ide.ItemProperties.LIFOstack PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LIFOstack/Program.cs">
+﻿<Properties StartupConfiguration="{685E1D27-5C8E-4756-8647-164F2C1F11EA}|Default">
+  <MonoDevelop.Ide.ItemProperties.WorkflowEngine FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkflowEngine/Program.cs">
     <Files>
-      <File FileName="LIFOstack/Program.cs" Line="25" Column="1" />
+      <File FileName="WorkflowEngine/Program.cs" Line="12" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LIFOstack" expanded="True">
-            <Node name="LIFOstack" expanded="True">
+          <Node name="WorkflowEngine" expanded="True">
+            <Node name="WorkflowEngine" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
