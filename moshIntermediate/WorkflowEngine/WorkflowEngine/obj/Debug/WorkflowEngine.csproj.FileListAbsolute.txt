@@ -1,0 +1,6 @@
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/WorkflowEngine/WorkflowEngine/bin/Debug/WorkflowEngine.exe
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/WorkflowEngine/WorkflowEngine/bin/Debug/WorkflowEngine.pdb
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/WorkflowEngine/WorkflowEngine/obj/Debug/WorkflowEngine.csprojAssemblyReference.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/WorkflowEngine/WorkflowEngine/obj/Debug/WorkflowEngine.csproj.CoreCompileInputs.cache
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/WorkflowEngine/WorkflowEngine/obj/Debug/WorkflowEngine.exe
+/Users/danchoiniere/careerDevs/cSharpMosh/moshIntermediate/WorkflowEngine/WorkflowEngine/obj/Debug/WorkflowEngine.pdb
